@@ -2,8 +2,8 @@
   "name": "@opherlabs/petlib",
   "version": "0.0.3",
   "description": "this is a simple description",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "build": "npx tsc ",
     "dev": "pnpm build &&  node ./dist/test.js",
