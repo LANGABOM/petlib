@@ -1,11 +1,12 @@
 {
-  "name": "petlib",
+  "name": "@opherlabs/petlib",
   "version": "0.0.0",
   "description": "this is a simple description",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc ",
-    "dev":"pnpm build &&  node ./dist/test.js"
+    "dev":"pnpm build &&  node ./dist/test.js",
+    "pub": "pnpm build && npm publish --access public"
   },
   "lib": {
     "pet": "./index.js",
