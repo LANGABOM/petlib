@@ -1,6 +1,6 @@
 {
   "name": "petlibs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is a simple description",
   "main": "index.js",
   "scripts": {
@@ -29,8 +29,8 @@
     "url": "https://github.com/opherlabs/petlib.git"
   },
   "colaborators": [
-    "mitch1009",
-    "Daniel.Mokoena",
+    "mitch1009, (https://github.com/mitch1009)",
+    "Daniel.Mokoena (https://github.com/Daniel-Mokoena)",
     "MathibelaD",
     "Dzunisan",
     "M9china",
