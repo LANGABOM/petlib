@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc ",
-    "dev":"pnpm build &&  node ./dist/test.js",
-    "pub": "pnpm build && npm publish --access public"
+    "dev": "pnpm build &&  node ./dist/test.js",
+    "pub": "pnpm build && npm publish --access public",
+    "cs": "pnpm changeset"
   },
   "lib": {
     "pet": "./index.js",
@@ -45,6 +46,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@types/node": "^20.11.27",
     "typescript": "^5.4.2"
   },
