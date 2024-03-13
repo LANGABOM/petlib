@@ -1,5 +1,5 @@
 {
-  "name": "@org/petlib",
+  "name": "petlibs",
   "version": "0.0.0",
   "description": "this is a simple description",
   "main": "index.js",
