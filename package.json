@@ -1,6 +1,6 @@
 {
   "name": "@opherlabs/petlib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is a simple description",
   "main": "index.js",
   "scripts": {
