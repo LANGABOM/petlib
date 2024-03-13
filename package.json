@@ -12,6 +12,7 @@
     "nqo": "./nqo.js"
   },
   "files": [
+    "dist/",
     "index.js",
     "README.md",
     "package.json"
