@@ -1,17 +1,47 @@
 {
-  "name": "petlib",
+  "name": "@org/petlib",
   "version": "0.0.0",
-  "description": "",
+  "description": "this is a simple description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc "
   },
-  "keywords": ["pet", "javascript", "library","fucntion"],
+  "lib": {
+    "pet": "./index.js",
+    "mok": "./mok.js",
+    "nqo": "./nqo.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "pet",
+    "javascript",
+    "library",
+    "fucntion"
+  ],
   "homepage": "https://github.com/opherlabs/petlib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opherlabs/petlib.git"
+  },
+  "contributors": [
+    "mitch1009",
+    "Daniel.Mokoena",
+    "MathibelaD",
+    "Dzunisan",
+    "M9china",
+    "DanielV"
+  ],
   "author": {
     "name": "Mitch Chanza",
-    "url": "https://mitch.guru", 
+    "url": "https://mitch.guru",
     "email": "hello@mitch.guru"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
 }
