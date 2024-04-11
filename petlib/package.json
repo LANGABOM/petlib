@@ -1,0 +1,61 @@
+{
+  "name": "@opherlabs/petlib",
+  "version": "0.0.4",
+  "description": "this is a simple description",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc ",
+    "dev": "pnpm build &&  node ./dist/test.js",
+    "pub": "pnpm build && npm publish --access public",
+    "cs": "pnpm changeset"
+  },
+  "lib": {
+    "pet": "./index.js",
+    "mok": "./mok.js",
+    "nqo": "./nqo.js"
+  },
+  "files": [
+    "dist/",
+    "index.js",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "pet",
+    "javascript",
+    "library",
+    "fucntion"
+  ],
+  "homepage": "https://github.com/opherlabs/petlib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opherlabs/petlib.git"
+  },
+  "colaborators": [
+    "mitch1009 (https://github.com/mitch1009)",
+    "Daniel.Mokoena (https://github.com/Daniel-Mokoena)",
+    "MathibelaD",
+    "Dzunisan",
+    "M9china",
+    "DanielV"
+  ],
+  "author": {
+    "name": "Mitch Chanza",
+    "url": "https://mitch.guru",
+    "email": "hello@mitch.guru"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.11.27",
+    "typescript": "^5.4.2"
+  },
+  "peerDependencies": {
+    "@prisma/client": "^5.11.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "graphql": "^16.8.1"
+  }
+}
