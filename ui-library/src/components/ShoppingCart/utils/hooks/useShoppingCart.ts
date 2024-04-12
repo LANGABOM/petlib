@@ -17,3 +17,6 @@ export const useShoppingCartHook = create(persist<IUseShoppingCartProps>((set) =
     }
 )
 )
+
+// ASSIGNMENT
+// create a hook  that adds the items to a wishlist : useWishlistHook
