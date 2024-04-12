@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export declare interface IUseShoppingCartProps {
-    cart:[],
+    cart:any[],
     addToCart:(item:any)=>void,
     removeFromCart:(item:any)=>void
     clearCart:()=>void
