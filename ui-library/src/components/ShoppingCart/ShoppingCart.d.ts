@@ -1,5 +1,6 @@
 export interface IShoppingCartProps {
-    option: "ICON"|"BUTTON"
+    option: "ICON"|"BUTTON",
+    item?: ICartItems
 }
 
 export interface ICartItems {
@@ -8,4 +9,5 @@ export interface ICartItems {
     description: string
     price: number
     image: string
+    url?: string
 }
