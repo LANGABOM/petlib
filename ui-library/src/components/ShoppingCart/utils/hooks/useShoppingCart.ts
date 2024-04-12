@@ -1,12 +1,12 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { create } from 'zustand'
+import { ICartItems } from '../../ShoppingCart.d'
 import { IUseShoppingCartProps } from './useShoppingcart.d'
 export const useShoppingCart= create<IUseShoppingCartProps>((set)=>({
     cart:[],
-    addToCart:(item:any)=>set((state)=>({cart:[...state.cart,item]})),
+    addToCart:(item:ICartItems)=>set((state)=>({cart:[...state.cart,item]})),
     clearCart:()=>set(({cart:[]})),
-    removeFromCart:(item:any)=>({cart: [item]}), // remove a specific item in the array
-    totalItems:{totalItems:0,totalAmount:0}
+    removeFromCart:(item:ICartItems)=>({cart: [item]}), // remove a specific item in the array
+    totalItems:{totalItems:0,totalAmount:0},
 }))
 
 // 
