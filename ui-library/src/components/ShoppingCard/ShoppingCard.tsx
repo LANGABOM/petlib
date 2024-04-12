@@ -4,8 +4,6 @@ import { ICartItems } from "../ShoppingCart/ShoppingCart.d"
 
 export const ShoppingCard :FC<{item:ICartItems}> = ({item}) => {
     return (
-
-
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href={item.url}>
                 <img className="p-8 rounded-t-lg" src={item.image} alt="product image" />
