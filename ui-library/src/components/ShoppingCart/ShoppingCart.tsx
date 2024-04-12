@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import { IShoppingCartProps } from './ShoppingCart.d'
-import { useShoppingCart } from './utils/hooks/useShoppingCart'
+import { useShoppingCartHook } from './utils/hooks/useShoppingCart'
 import { FaOpencart } from "react-icons/fa6";
 export const ShoppingCart: FC<IShoppingCartProps> = ({ option, item }) => {
-  const { addToCart, cart } = useShoppingCart()
+  const { addToCart, cart } = useShoppingCartHook()
   return (
     <div className=''>
       {option === "ICON" ?
