@@ -1,5 +1,5 @@
 import './App.css'
-import { ShoppingCart, ICartItems, ShoppingCard, NavBar } from './components'
+import { ShoppingCart, ICartItems, ShoppingCard, NavBar, NAVBAR_STATIC_DATA } from './components'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
     <div>
       <div>
-        <NavBar/>
+        <NavBar {...NAVBAR_STATIC_DATA}/>
       </div>
     <div className='mx-auto space-y-6 max-w-7xl my-8'>
      
