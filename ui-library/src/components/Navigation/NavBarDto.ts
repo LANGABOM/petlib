@@ -5,4 +5,5 @@ export declare interface INavBar{
 
 export declare interface  INavBarItem{
     item: string;
+    link: string;
 }
