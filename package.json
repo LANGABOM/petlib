@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "pet": "pnpm --filter @opherlabs/petlib",
-    "ui":"pnpm --filter @opherlabs/ui-library"
+    "ui": "pnpm --filter @opherlabs/ui-library"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.3"
+  }
 }
