@@ -15,7 +15,7 @@ function App() {
         <NavBar/>
       </div>
     <div className='mx-auto space-y-6 max-w-7xl my-8'>
-      <ShoppingCart option="ICON" />
+     
       <div className="flex space-x-4 flex-wrap">
         {
           itemsList.map(item => <div key={item.id}>

@@ -2,6 +2,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { BellIcon, XMarkIcon, Bars3Icon } from "@heroicons/react/16/solid"
 import { Fragment } from "react/jsx-runtime"
 import { classNames } from "../../utils"
+import { ShoppingCart } from "../ShoppingCart"
 
 export const NavBar: React.FC<any> = ()=>{
     return (
@@ -48,14 +49,7 @@ export const NavBar: React.FC<any> = ()=>{
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex items-center">
-                  <button
-                    type="button"
-                    className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                  >
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">View notifications</span>
-                    <BellIcon className="h-6 w-6" aria-hidden="true" />
-                  </button>
+                  
 
                   {/* Profile dropdown */}
                   <Menu as="div" className="relative ml-3">
@@ -63,11 +57,7 @@ export const NavBar: React.FC<any> = ()=>{
                       <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">Open user menu</span>
-                        <img
-                          className="h-8 w-8 rounded-full"
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                          alt=""
-                        />
+                        <ShoppingCart option="ICON" />
                       </Menu.Button>
                     </div>
                     <Transition
@@ -124,6 +114,8 @@ export const NavBar: React.FC<any> = ()=>{
                   </Menu>
                 </div>
               </div>
+
+
               <div className="-mr-2 flex sm:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
