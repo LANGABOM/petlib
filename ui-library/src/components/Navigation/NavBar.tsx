@@ -8,16 +8,27 @@ import { INavBar, INavBarItem } from "./NavBarDto";
 export const NavBar: React.FC<INavBar> = ({ items, logo }) => {
   return (
     <>
-      <Disclosure as="nav" className="bg-[#047857]">
+      <Disclosure as="nav" className="bg-[]">
         {({ open }) => (
           <>
-            <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 border border-x-3 ">
               <div className="flex h-16 items-center justify-between">
                 <div className="flex items-center">
-                  <div className="flex-shrink-0">
-                    <img className="h-8 w-auto" src={logo} alt="Your Company" />
+                  <div className="flex-shrink-0 p-1">
+                    <img className="h-12  rounded-full  w-auto" src={logo} alt="Your Company" />
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
+                   <h1 className="text-4xl text-[#F97316] font-light">
+                    WE'RE SHOPING
+                   </h1>
+                  </div>
+                </div>
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex items-center">
+                    {/* Profile dropdown */}
+                    <Menu as="div" className="relative ml-3">
+                      <div>
+                      <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                       {items.map((item: INavBarItem, index: number) => {
@@ -26,26 +37,24 @@ export const NavBar: React.FC<INavBar> = ({ items, logo }) => {
                             <a
                               href={item.link}
                               key={index}
-                              className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                              className="rounded-md bg-[#F97316] p-2 text-sm font-medium text-white"
                             >
                               {item.item}
                             </a>
                           </>
                         );
                       })}
-                    </div>
-                  </div>
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex items-center">
-                    {/* Profile dropdown */}
-                    <Menu as="div" className="relative ml-3">
-                      <div>
-                        <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                           <span className="absolute -inset-1.5" />
                           <span className="sr-only">Open user menu</span>
                           <ShoppingCart option="ICON" />
                         </Menu.Button>
+                    </div>
+                    
+                    
+                  </div>
+                        
+
                       </div>
                       <Transition
                         as={Fragment}
