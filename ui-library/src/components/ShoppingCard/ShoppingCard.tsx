@@ -25,6 +25,8 @@ export const ShoppingCard: FC<{ item: ICartItems }> = ({ item }) => {
         <div>
           <p className="text-sm text-gray-400 w-[22rem] ">{item.description}</p>
         </div>
+
+        <div className="flex items-center justify-between">
         <div className="flex items-center mt-2.5 mb-5">
           <div className="flex items-center space-x-1 rtl:space-x-reverse">
           <div>
@@ -42,14 +44,18 @@ export const ShoppingCard: FC<{ item: ICartItems }> = ({ item }) => {
           {rating} stars
           </span>
         </div>
-
-        <div className="flex items-center justify-between">
-          <span className="text-3xl font-bold text-gray-900 dark:text-white">
+        <span className="text-2xl font-bold text-gray-900 dark:text-white">
             {item.price.toLocaleString("en-US", {
               style: "currency",
               currency: "USD",
             })}
           </span>
+
+        </div>
+
+        <div className="flex items-center justify-between">
+        <ShoppingCart option="BUTTON" item={item} />
+         
           <ShoppingCart option="BUTTON" item={item} />
         </div>
       </div>
