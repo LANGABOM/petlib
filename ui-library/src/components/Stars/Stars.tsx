@@ -10,7 +10,7 @@ export const  Stars: React.FC<RatingProps> = ({className,
     color = "#ffd700",
     hoverColor = "#ffc107",
     activeColor = "#ffc107",
-    size = 30,
+    size = 20,
     edit = false,
     isHalf = true,
     onChange,
@@ -79,9 +79,9 @@ for (let i = 0; i < count; i++) {
   
     return (
         <>
-           <div className="flex items-center space-x-1 rtl:space-x-reverse">
-        <div className={`rating ${className}`}>{stars}</div>;
-        </div>
+           
+        <div className={`rating ${className} flex items-center space-x-1 rtl:space-x-reverse`}>{stars}</div>
+        
         </>
     )
 };
