@@ -14,7 +14,7 @@ export const ShoppingCart: FC<IShoppingCartProps> = ({ option, item }) => {
         </button>
         :
         <div className='flex space-x-6'>
-          <button className='bg-red-500 text-white px-3 py-2 rounded-md' onClick={() => addToCart(item)}>Add to cart</button>
+          <button className='bg-[#F97316] text-white px-3 py-2 rounded-md' onClick={() => addToCart(item)}>Add to cart</button>
         </div>
       }
     </div>

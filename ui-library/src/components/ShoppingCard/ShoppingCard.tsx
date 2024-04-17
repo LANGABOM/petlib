@@ -26,7 +26,7 @@ export const ShoppingCard: FC<{ item: ICartItems }> = ({ item }) => {
           <p className="text-sm text-gray-400 w-[22rem] ">{item.description}</p>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between my-3 ">
         <div className="flex items-center mt-2.5 mb-5">
           <div className="flex items-center space-x-1 rtl:space-x-reverse">
           <div>
