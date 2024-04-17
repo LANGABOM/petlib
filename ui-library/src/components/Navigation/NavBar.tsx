@@ -37,7 +37,7 @@ export const NavBar: React.FC<INavBar> = ({ items, logo }) => {
                             <a
                               href={item.link}
                               key={index}
-                              className="rounded-md bg-[#F97316] p-2 text-sm font-medium text-white"
+                              className="p-2 text-lg font-medium text-[#F97316]"
                             >
                               {item.item}
                             </a>

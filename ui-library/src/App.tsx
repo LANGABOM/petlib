@@ -4,9 +4,9 @@ import { ShoppingCart, ICartItems, ShoppingCard, NavBar, NAVBAR_STATIC_DATA } fr
 
 function App() {
   const itemsList: ICartItems[] = [
-    { id: 1, name: "n1", description: "The description", price: 40, image: "https://flowbite.com/docs/images/products/apple-watch.png" },
-    { id: 2, name: "The second item", description: "The description", price: 40, image: "https://flowbite.com/docs/images/products/apple-watch.png" },
-    { id: 3, name: "The shopping cart", description: "The description", price: 40, image: "https://flowbite.com/docs/images/products/apple-watch.png" },
+    { id: 1, name: "n1", description: `a wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email`, price: 40, image: "https://flowbite.com/docs/images/products/apple-watch.png" },
+    { id: 2, name: "The second item", description: `a wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email`, price: 40, image: "https://flowbite.com/docs/images/products/apple-watch.png" },
+    { id: 3, name: "The shopping cart", description: `a wearable smartwatch that allows users to accomplish a variety of tasks, including making phone calls, sending text messages and reading email`, price: 40, image: "https://flowbite.com/docs/images/products/apple-watch.png" },
   ]
   return (
     <>
