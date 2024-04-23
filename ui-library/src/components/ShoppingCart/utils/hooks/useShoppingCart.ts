@@ -7,7 +7,7 @@ export const useShoppingCartHook = create(persist<IUseShoppingCartProps>((set) =
     cart: [],
     addToCart: (item: ICartItems) => set((state) => ({ cart: [...state.cart, item] })),
     clearCart: () => set(({ cart: [] })),
-    removeFromCart: (item: ICartItems) => ({ cart: [item] }), // remove a specific item in the array
+    removeFromCart: (item: ICartItems) => set((state)=>({ cart: state.cart.filter((c)=> c.id !== item.id)})), // remove a specific item in the array
     totalItems: { totalItems: 0, totalAmount: 0 },
 }
 ),

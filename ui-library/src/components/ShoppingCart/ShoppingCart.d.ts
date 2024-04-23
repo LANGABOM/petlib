@@ -1,7 +1,10 @@
 export interface IShoppingCartProps {
     option: "ICON"|"BUTTON",
+    buttonType?: TButtonType 
     item?: ICartItems
 }
+
+export declare type  TButtonType = "ADD"|"REMOVE"
 
 export interface ICartItems {
     id: number

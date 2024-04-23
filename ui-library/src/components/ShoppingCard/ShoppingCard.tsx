@@ -53,10 +53,10 @@ export const ShoppingCard: FC<{ item: ICartItems }> = ({ item }) => {
 
         </div>
 
-        <div className="flex items-center justify-between">
-        <ShoppingCart option="BUTTON" item={item} />
+        <div className="flex items-center justify-center w-full">
+        <ShoppingCart option="BUTTON" item={item} buttonType="ADD" />
          
-          <ShoppingCart option="BUTTON" item={item} />
+          
         </div>
       </div>
     </div>
