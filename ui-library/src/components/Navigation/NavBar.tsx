@@ -2,7 +2,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, XMarkIcon, Bars3Icon } from "@heroicons/react/16/solid";
 import { Fragment } from "react/jsx-runtime";
 import { classNames } from "../../utils";
-import { ShoppingCart } from "../ShoppingCart";
+import { ShoppingCart, WishListIcon } from "../ShoppingCart";
 import { INavBar, INavBarItem } from "./NavBarDto";
 
 export const NavBar: React.FC<INavBar> = ({ items, logo }) => {
@@ -44,10 +44,11 @@ export const NavBar: React.FC<INavBar> = ({ items, logo }) => {
                           </>
                         );
                       })}
-                      <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <Menu.Button className="relative flex  ">
                           <span className="absolute -inset-1.5" />
                           <span className="sr-only">Open user menu</span>
-                          <ShoppingCart option="ICON" />
+                          <WishListIcon/>
+                          <ShoppingCart  option="ICON" />
                         </Menu.Button>
                     </div>
                     
